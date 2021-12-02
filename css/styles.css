@@ -1,6 +1,6 @@
 :root {
-    --main-blue:rgba(40,120,226,89);
-    --second-blue:rgb(36, 144, 207);
+    --main-blue: rgba(40, 120, 226, 89);
+    --second-blue: rgb(36, 144, 207);
 }
 
 * {
@@ -15,11 +15,12 @@ header {
     margin-top: 4px;
     position: relative;
 }
-header::after{
+
+header::after {
     position: absolute;
     top: 112%;
     content: "";
-    border-bottom: 1px solid rgba(40,120,226,89);
+    border-bottom: 1px solid rgba(40, 120, 226, 89);
     width: 100%;
 }
 
@@ -34,6 +35,7 @@ header::after{
     max-height: 54px;
     padding-top: 3px;
 }
+
 .menu-list {
     list-style: none;
     display: flex;
@@ -56,6 +58,7 @@ header::after{
     border-radius: 4px;
     transition: 0.2s;
 }
+
 .nav-item:hover {
     background-color: rgb(36, 144, 207);
     color: #fff;
@@ -64,7 +67,7 @@ header::after{
 
 .nav-item:active {
     background-color: rgb(21, 84, 121);
-    
+
     transition: 0.05s ease-in-out;
 }
 
@@ -81,9 +84,11 @@ header::after{
     top: 120%;
     width: 151px;
     border-radius: 4px;
+    z-index: 10;
 
     background-color: var(--second-blue);
 }
+
 .drop-down__gallery ul {
     list-style: none;
     padding-left: 0;
@@ -97,10 +102,11 @@ header::after{
 }
 
 
-.drop-down__item  {
+.drop-down__item {
     display: block;
     box-sizing: border-box;
 }
+
 .drop-down__item a:hover {
     color: var(--second-blue);
     background-color: #fff;
@@ -111,7 +117,9 @@ header::after{
 .drop-down__item {
     width: 100%;
 }
+
 .drop-down__item a {
+
     margin: 0;
     width: 100%;
     height: 100%;
@@ -124,6 +132,7 @@ header::after{
     visibility: hidden;
     opacity: 0;
 }
+
 .burger-menu {
     background-color: #fff;
     border: none;
@@ -141,6 +150,12 @@ header::after{
         display: block;
         transform: translate(50%, 5%)
     }
+
+    .logo {
+        display: block;
+        transform: translate(-50%, 5%)
+    }
+
     /* .menu {
         display: none;
     } */
@@ -150,13 +165,81 @@ header::after{
         right: 0;
         transform: translateY(57px);
     }
+
     .menu-list li:not(:last-child) {
         margin: 0;
     }
+
     .menu-list li {
         display: flex;
-        
-        
+
+
         justify-content: flex-end;
     }
-  }
+}
+
+
+
+
+.title-section {
+    width: 100%;
+    height: 440px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('/img/teahub.io-daily-wallpaper-191082.png');
+        background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: calc(540px*0.40) 40px 0 40px;
+    margin-top: 8px;
+}
+
+
+
+.title-heading {
+    margin: 0;
+    display: block;
+    font-size: 64px;
+    color: #fff;
+    z-index: 10;
+    margin-bottom: 60px;
+}
+
+.donate-btn {
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    background-color: var(--second-blue);
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.2s background-color;
+    cursor: pointer;
+    margin-right: 32px;
+}
+.donate-btn:hover {
+    background-color:rgb(21, 84, 121)
+}
+
+.contact-btn {
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    color: var(--second-blue);
+    transition: 0.2s background-color;
+    cursor: pointer;
+    margin-right: 32px;
+}
+
+.contact-btn:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.descr-section {
+    height: 600px;
+}
