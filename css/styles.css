@@ -31,9 +31,16 @@ header::after {
     justify-content: space-between;
 }
 
+.logo {
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .logo-img {
-    max-height: 54px;
-    padding-top: 3px;
+    height: 40px;
+
 }
 
 .menu-list {
@@ -55,7 +62,6 @@ header::after {
     letter-spacing: 1px;
     padding: 8px 16px;
     color: var(--main-blue);
-    border-radius: 4px;
     transition: 0.2s;
 }
 
@@ -151,10 +157,7 @@ header::after {
         transform: translate(50%, 5%)
     }
 
-    .logo {
-        display: block;
-        transform: translate(-50%, 5%)
-    }
+    
 
     /* .menu {
         display: none;
@@ -224,8 +227,7 @@ header::after {
 }
 
 .donate-btn:active{
-    background-color: rgb(21, 84, 121);
-
+    background-color: rgb(18, 68, 97);
     transition: 0.05s ease-in-out;
 }
 
@@ -245,7 +247,133 @@ header::after {
 .contact-btn:hover {
     background-color: rgb(192, 192, 192);
 }
+.contact-btn:active {
+}
 
 .descr-section {
     height: 600px;
+    margin: 0 40px;
+    overflow: hidden;
+}
+.content {
+    display: flex;
+}
+.descr-heading {
+    display: block;
+    max-width: 440px;
+    font-size: 2rem;
+    color: var(--main-blue);
+    position: relative;
+}
+.descr-heading::after{
+    content: '';
+    width: 500%;
+    position: absolute;
+    border-bottom: 1px solid var(--main-blue);
+    top: 50%;
+    left: 90%;
+}
+
+.descr-img {
+    width: 370px;
+    height: 200px;
+    margin: 0 30px 30px 0;
+}
+.descr-text {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.descr-text a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--second-blue);
+    transition: 0.2s;
+}
+.descr-text a:hover {
+
+    color: rgb(29, 90, 170);
+
+}
+
+
+.footer {
+    background-color: rgb(74, 139, 226);
+    color: #fff;
+    margin: 0;
+    padding-bottom: 12px;
+}
+.sign-up {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 40px;
+}
+.sign-up__header {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 14px;
+}
+.sign-up__text {
+    margin: 0 0 16px 0;
+
+}
+
+.email-input {
+    color: #fff;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 32px;
+    margin-bottom: 14px;
+}
+
+.email-input::placeholder {
+    color: #fff;
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 4px 16px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.2s background-color;
+}
+
+.submit-btn:hover {
+    background-color: #fff;
+    color: var(--second-blue);
+}
+
+.footer-menu__list {
+    min-width: 85%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.footer-menu__list li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding: 8px 16px;
+    transition: 0.2s;
+}
+.footer-menu__list li a:hover{
+    color: var(--second-blue);
+    background-color: #fff;
 }
