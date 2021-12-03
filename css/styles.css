@@ -247,8 +247,7 @@ header::after {
 .contact-btn:hover {
     background-color: rgb(192, 192, 192);
 }
-.contact-btn:active {
-}
+
 
 .descr-section {
     height: 600px;
