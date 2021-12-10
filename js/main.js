@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropDownGallery = document.querySelector('.drop-down__gallery')
     const burgerMenuBtn = document.querySelector('.burger-menu')
     const menu = document.querySelector('.menu')
+    const emailConfirmBtn = document.querySelector('.submit-btn')
 
 
     galleryBtn.addEventListener('click', function(){
