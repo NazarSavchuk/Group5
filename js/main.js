@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const burgerMenuBtn = document.querySelector('.burger-menu')
     const menu = document.querySelector('.menu')
     const emailConfirmBtn = document.querySelector('.submit-btn')
-
+    const accTitle = document.querySelectorAll('.acc-title')
+    const accContent = document.querySelector('.acc-content')
 
     galleryBtn.addEventListener('click', function(){
         dropDownGallery.classList.toggle('hidden')
@@ -19,6 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
     burgerMenuBtn.addEventListener('click', function(){
         menu.classList.toggle('hidden')
     })
+
+    const acc = document.getElementsByClassName("accordion");
+    let i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
 })
 
 

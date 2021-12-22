@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     margin: 0;
 }
@@ -32,12 +33,13 @@ header::after {
 }
 
 .logo {
-    
+
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .logo-img {
     height: 40px;
 
@@ -158,7 +160,7 @@ header::after {
         transform: translate(50%, 5%)
     }
 
-    
+
 
     /* .menu {
         display: none;
@@ -192,7 +194,7 @@ header::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
         url('../img/main.jpg');
-        background-attachment: fixed;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -225,11 +227,12 @@ header::after {
     cursor: pointer;
     margin-right: 32px;
 }
+
 .donate-btn:hover {
-    background-color:rgb(21, 84, 121)
+    background-color: rgb(21, 84, 121)
 }
 
-.donate-btn:active{
+.donate-btn:active {
     background-color: rgb(18, 68, 97);
     transition: 0.05s ease-in-out;
 }
@@ -253,51 +256,87 @@ header::after {
 
 
 .descr-section {
-    padding: 32px 40px 16px 40px;
-    overflow:hidden;
+    padding: 52px 40px 16px 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.87),
+            rgba(0, 0, 0, 0.87)), url(../img/volunteerhands.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
 }
+
 .content {
-    display: flex;
+    color: #fff;
 }
+
 .descr-heading {
     display: block;
-    font-size: 2rem;
-    color: var(--main-blue);
-    position: relative;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #fff;
     margin-bottom: 16px;
     overflow: hidden;
 }
-.descr-heading::after{
-    content: '';
-    width: 300%;
-    position: absolute;
-    border-bottom: 1px solid var(--main-blue);
-    top: 50%;
-}
 
-.descr-img {
-    width: 370px;
-    height: 200px;
-    margin: 0 30px 30px 0;
-}
+
+
+
 .descr-text {
+    display: block;
+    width: 100%;
     margin: 0;
     font-size: 2rem;
     font-weight: 500;
+    text-align: center;
+    margin-bottom: 65px;
 }
 
-.descr-text a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--second-blue);
-    transition: 0.2s;
-}
-.descr-text a:hover {
 
-    color: rgb(29, 90, 170);
+.social-media-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
 }
 
+i.fab {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
+.fa-facebook {
+    color: rgb(66, 103, 178);
+}
+
+.fa-instagram {
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-linkedin {
+    color: rgb(40,103,178);
+}
+.fa-google-plus-g {
+    color: #db4a39;
+}
+.fa-reddit {
+    color: #FF4500;
+}
+.fa-telegram {
+    color: #0088CC;
+}
+.fa-discord {
+    color: #7289DA;
+}
+.fa-twitter {
+    color: 	#1DA1F2;
+}
+.fa-youtube {
+    color: 	#FF0000;
+}
 .why-us-section {
     padding: 0 40px;
     overflow: hidden;
@@ -310,8 +349,10 @@ header::after {
     position: relative;
     margin-bottom: 16px;
     overflow: hidden;
+    margin-bottom: 40px;
 }
-.why-us-heading::after{
+
+.why-us-heading::after {
     content: '';
     width: 1000%;
     position: absolute;
@@ -323,114 +364,180 @@ header::after {
 .wu-content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .why-us-list {
-    max-width: 50%;
+    max-width: 40%;
     list-style: none;
+    margin: 0 auto;
+    margin-bottom: 32px;
 }
 
 .wu-li {
     margin-bottom: 16px;
     margin-left: 50px;
+    font-size: 1.2rem;
 }
 
-.wu-li::after{
+.wu-li::after {
     background-repeat: no-repeat;
 }
-.wu-li:nth-child(1){
+
+.wu-li:nth-child(1) {
     position: relative;
 }
-.wu-li:nth-child(1)::after{
+
+.wu-li:nth-child(1)::after {
     content: '';
     background-image: url('../img/smog-solid.svg');
     position: absolute;
-    right: 102%;
+    right: 104%;
     top: 0;
     width: 40px;
     height: 40px;
     transform: translateY(50%);
+    fill: red;
 
 }
 
-.wu-li:nth-child(2){
+.wu-li:nth-child(2) {
     position: relative;
 }
-.wu-li:nth-child(2)::after{
+
+.wu-li:nth-child(2)::after {
     content: '';
     background-image: url('../img/recycle-solid.svg');
     position: absolute;
-    right: 102%;
+    right: 104%;
     top: 0;
     width: 40px;
     height: 40px;
     transform: translateY(50%);
 
 }
-.wu-li:nth-child(3){
+
+.wu-li:nth-child(3) {
     position: relative;
 }
-.wu-li:nth-child(3)::after{
+
+.wu-li:nth-child(3)::after {
     content: '';
     background-image: url('../img/oil-can-solid.svg');
     position: absolute;
-    right: 102%;
+    right: 104%;
     top: 0;
     width: 40px;
     height: 40px;
     transform: translateY(50%);
 
 }
-.wu-li:nth-child(4){
+
+.wu-li:nth-child(4) {
     position: relative;
 }
-.wu-li:nth-child(4)::after{
+
+.wu-li:nth-child(4)::after {
     content: '';
     background-image: url('../img/temperature-high-solid.svg');
     position: absolute;
-    right: 102%;
+    right: 104%;
     top: 0;
     width: 40px;
     height: 40px;
     transform: translateY(50%);
 
 }
-.wu-li:nth-child(5){
+
+.wu-li:nth-child(5) {
     position: relative;
 }
-.wu-li:nth-child(5)::after{
+
+.wu-li:nth-child(5)::after {
     content: '';
     background-image: url('../img/tree-solid.svg');
     position: absolute;
-    right: 102%;
+    right: 104%;
     top: 0;
     width: 40px;
     height: 40px;
     transform: translateY(50%);
 
 }
+
 .wu-img {
     border-radius: 16px;
-    margin: 0px 0 16px 16px;
-    max-width: 48%;
+    margin: 0 auto;
+    max-width: 45%;
 }
+
+
+
+.acc-section {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    height: 350px;
+}
+
+.acc-heading {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.accordion {
+    padding: 8px 16px;
+    background-color: rgb(226, 225, 225);
+    position: relative;
+}
+
+.acc-content {
+    padding: 8px 16px;
+    display: none;
+}
+
+.acc-content.active {
+    display: block;
+}
+
+.accordion:after {
+    content: '\02795';
+    display: inline-flex;
+    justify-content: right;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+
+
+
+
+
+
+
+
 .footer {
     background-color: rgb(74, 139, 226);
     color: #fff;
     margin: 0;
     padding-bottom: 12px;
 }
+
 .sign-up {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
     padding: 20px 40px;
 }
+
 .sign-up__header {
     margin: 0;
     font-size: 2rem;
     margin-bottom: 14px;
 }
+
 .sign-up__text {
     margin: 0 0 16px 0;
 
@@ -489,7 +596,8 @@ header::after {
     padding: 8px 16px;
     transition: 0.2s;
 }
-.footer-menu__list li a:hover{
+
+.footer-menu__list li a:hover {
     color: var(--second-blue);
     background-color: #fff;
 }
