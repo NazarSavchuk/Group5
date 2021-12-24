@@ -259,6 +259,8 @@ header::after {
     padding: 52px 40px 16px 40px;
     background: linear-gradient(rgba(0, 0, 0, 0.87),
             rgba(0, 0, 0, 0.87)), url(../img/volunteerhands.jpg);
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 380px;
@@ -342,136 +344,28 @@ i.fab {
     overflow: hidden;
 }
 
-.why-us-heading {
-    display: block;
-    font-size: 2rem;
-    color: var(--main-blue);
-    position: relative;
-    margin-bottom: 16px;
-    overflow: hidden;
-    margin-bottom: 40px;
+.swiper {
+    width: 100%;
+    height: 686px;
+  }
+.first-slide {
+    background: linear-gradient(rgba(0, 0, 0, 0.87),
+            rgba(0, 0, 0, 0.87)), url(../img/water-pollution.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
 }
-
-.why-us-heading::after {
-    content: '';
-    width: 1000%;
-    position: absolute;
-    border-bottom: 1px solid var(--main-blue);
-    top: 50%;
+.second-slide {
+    background: linear-gradient(rgba(0, 0, 0, 0.87),
+            rgba(0, 0, 0, 0.87)), url(../img/Pollution\ Background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
 }
-
-
-.wu-content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.third-slide {
+    background: linear-gradient(rgba(0, 0, 0, 0.87),
+            rgba(0, 0, 0, 0.87)), url(../img/6412407.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
 }
-
-.why-us-list {
-    max-width: 40%;
-    list-style: none;
-    margin: 0 auto;
-    margin-bottom: 32px;
-}
-
-.wu-li {
-    margin-bottom: 16px;
-    margin-left: 50px;
-    font-size: 1.2rem;
-}
-
-.wu-li::after {
-    background-repeat: no-repeat;
-}
-
-.wu-li:nth-child(1) {
-    position: relative;
-}
-
-.wu-li:nth-child(1)::after {
-    content: '';
-    background-image: url('../img/smog-solid.svg');
-    position: absolute;
-    right: 104%;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    transform: translateY(50%);
-    fill: red;
-
-}
-
-.wu-li:nth-child(2) {
-    position: relative;
-}
-
-.wu-li:nth-child(2)::after {
-    content: '';
-    background-image: url('../img/recycle-solid.svg');
-    position: absolute;
-    right: 104%;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    transform: translateY(50%);
-
-}
-
-.wu-li:nth-child(3) {
-    position: relative;
-}
-
-.wu-li:nth-child(3)::after {
-    content: '';
-    background-image: url('../img/oil-can-solid.svg');
-    position: absolute;
-    right: 104%;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    transform: translateY(50%);
-
-}
-
-.wu-li:nth-child(4) {
-    position: relative;
-}
-
-.wu-li:nth-child(4)::after {
-    content: '';
-    background-image: url('../img/temperature-high-solid.svg');
-    position: absolute;
-    right: 104%;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    transform: translateY(50%);
-
-}
-
-.wu-li:nth-child(5) {
-    position: relative;
-}
-
-.wu-li:nth-child(5)::after {
-    content: '';
-    background-image: url('../img/tree-solid.svg');
-    position: absolute;
-    right: 104%;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    transform: translateY(50%);
-
-}
-
-.wu-img {
-    border-radius: 16px;
-    margin: 0 auto;
-    max-width: 45%;
-}
-
-
 
 .acc-section {
     max-width: 70%;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    
+
 
 </head>
+
 <body>
-    
+
     <header>
         <div class="nav">
 
@@ -46,10 +49,16 @@
             </nav>
 
             <button class="burger-menu">
-                
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
             </button>
-            
+
 
 
         </div>
@@ -58,12 +67,12 @@
 
 
     <section class="title-section">
-            <h1 class="title-heading">Save your Environment</h1>
-            <div class="btns">
-                
+        <h1 class="title-heading">Save your Environment</h1>
+        <div class="btns">
+
             <button class="donate-btn">Donate</button>
             <button class="contact-btn">Contact us</button>
-            </div>
+        </div>
     </section>
 
 
@@ -83,78 +92,84 @@
                 to be a voluteer in cities or towns near you. Does it suits YOU?
                 Dont waste time!
             </p>
-        <div class="social-media-list">
-            <a href="https://www.facebook.com/" target="_blank">
-            <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.reddit.com/" target="_blank">
-            <i class="fab fa-reddit"></i>
-            </a>
-            <a href="https://web.telegram.org/" target="_blank">
-            <i class="fab fa-telegram"></i>
-            </a>
-            <a href="https://discord.com/" target="_blank">
-            <i class="fab fa-discord"></i>
-            </a>
-            <a href="https://twitter.com/" target="_blank">
-            <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank">
-            <i class="fab fa-youtube"></i>
-            </a>
-        </div>
-        
+            <div class="social-media-list">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.reddit.com/" target="_blank">
+                    <i class="fab fa-reddit"></i>
+                </a>
+                <a href="https://web.telegram.org/" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://discord.com/" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
         </div>
     </section>
 
 
 
-    <section class="why-us-section">
-        <h3 class="why-us-heading">Why us?</h3>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide first-slide">
+someshot
+          </div>
+          <div class="swiper-slide second-slide">Slide 2</div>
+          <div class="swiper-slide third-slide">Slide 3</div>
+          
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+      </div>
 
-        <div class="wu-content">
-        <ul class="why-us-list">
-            <li class="wu-li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi excepturi obcaecati natus fugit quas possimus accusamus illo corporis? Non molestias earum ipsa ex, quam hic esse? Deleniti quis repellend</li>
-            <li class="wu-li">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque labore natus commodi tempore quos. Unde hic rerum, voluptatibus commodi quas, aut iusto, quis mollitia dolore magni dignissimos eum vel at.</li>
-            <li class="wu-li">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque labore natus commodi tempore quos. Unde hic rerum, voluptatibus commodi quas, aut iusto, quis mollitia dolore magni dignissimos eum vel at.</li>
-            <li class="wu-li">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque labore natus commodi tempore quos. Unde hic rerum, voluptatibus commodi quas, aut iusto, quis mollitia dolore magni dignissimos eum vel at.</li>
-            <li class="wu-li">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque labore natus commodi tempore quos. Unde hic rerum, voluptatibus commodi quas, aut iusto, quis mollitia dolore magni dignissimos eum vel at.</li>
-        </ul>
 
-        <img src="img/save-ocean.jpg" alt="" class="wu-img">
-
-    </div>
-    </section>
-
-    
 
 
     <section class="acc-section">
         <div class="acc-heading">Lorem</div>
         <div class="acc-item">
             <div class="accordion">
-                    lorem
+                lorem
             </div>
             <div class="acc-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur adipisci tempore quos debitis vitae necessitatibus!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur adipisci tempore quos debitis
+                vitae necessitatibus!
             </div>
             <div class="accordion">
-                    lorem
+                lorem
             </div>
             <div class="acc-content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque dolor suscipit quis nam vitae aliquam.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque dolor suscipit quis nam vitae aliquam.
             </div>
             <div class="accordion">
-                    lorem
+                lorem
             </div>
             <div class="acc-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium maxime, necessitatibus eaque accusantium nulla similique!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium maxime, necessitatibus eaque
+                accusantium nulla similique!
             </div>
         </div>
     </section>
@@ -171,7 +186,7 @@
             <button class="submit-btn">JOIN US</button>
         </div>
 
-        
+
 
         <nav class="footer-menu">
             <ul class="footer-menu__list">
@@ -187,6 +202,8 @@
 
     </div>
     <script src="https://kit.fontawesome.com/e1af4116ac.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
