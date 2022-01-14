@@ -257,8 +257,9 @@ header::after {
 
 .descr-section {
     padding: 52px 40px 16px 40px;
-    background: linear-gradient(rgba(0, 0, 0, 0.87),
-            rgba(0, 0, 0, 0.87)), url(../img/volunteerhands.jpg);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.87),
+            rgba(0, 0, 0, 0.87)), url(../img/volunteerhands.jpg); */
+    background-color: rgb(247, 247, 247);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -267,14 +268,14 @@ header::after {
 }
 
 .content {
-    color: #fff;
+    color: rgb(14, 14, 14);
 }
 
 .descr-heading {
     display: block;
     text-align: center;
     font-size: 3.5rem;
-    color: #fff;
+    color: rgb(14, 14, 14);;
     margin-bottom: 16px;
     overflow: hidden;
 }
@@ -346,7 +347,6 @@ i.fab {
 
 .swiper {
     width: 100%;
-    height: 686px;
   }
 .first-slide {
     background: linear-gradient(rgba(0, 0, 0, 0.87),
@@ -502,4 +502,50 @@ i.fab {
     height: 100%;
     z-index: 100;
     background-color: red;
+}
+
+.slide-content {
+    display: flex;
+}
+.slide__img {
+    width: 40%;
+    height: 520px;
+    margin: 40px 20px 40px 40px;
+}
+.slide__text {
+    margin: 40px 40px 40px 20px;
+    color: white;
+}
+.slide__heading {
+    font-size: 3rem;
+    text-align: center;
+}
+.swiper-slide {
+    height: 600px;
+}
+.slide__descr {
+    font-size: 1.6rem;
+    text-align: left;
+}
+.slide-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    background-color: var(--main-blue);
+    border: 0;
+    cursor: pointer;
+    transition: .2s background-color;
+    color: #000;
+}
+.slide-btn:hover {
+    background-color: rgb(29, 92, 175);
+    transition: .2s background-color;
+}
+.swiper-button-prev {
+    transform: translateY(-50%);
+}
+.swiper-button-next {
+    transform: translateY(-50%);
 }
