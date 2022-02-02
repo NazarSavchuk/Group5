@@ -1,0 +1,161 @@
+:root {
+    --main-blue: rgba(40, 120, 226, 89);
+    --second-blue: rgb(36, 144, 207);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: relative;
+}
+
+header::after {
+    position: absolute;
+    top: 104%;
+    content: "";
+    border-bottom: 1px solid rgba(40, 120, 226, 89);
+    width: 100%;
+}
+
+
+.nav {
+    padding: 0 40px;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 40px;
+
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.menu-list li:not(:last-child) {
+    margin-right: 28px;
+
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #000;
+    line-height: 57px;
+    font-size: 24px;
+    text-transform: accordion;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    color: var(--main-blue);
+    transition: 0.2s;
+}
+
+.nav-item:hover {
+    background-color: rgb(36, 144, 207);
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item:active {
+    background-color: rgb(21, 84, 121);
+
+    transition: 0.05s ease-in-out;
+}
+.contacts__section {
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, #ffffff, #eae7ff, #d3d0ff, #bbb9ff, #9fa3ff);
+    margin-top: 2px;
+}
+
+.contacts__content {
+    text-align: center;
+    width: 100%;
+}
+.contacts__heading {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+.adress__heading {
+    font-size: 32px;
+    margin: 14px 0;
+}
+.adress__content {
+    font-size: 22px;
+}
+.socialMedia__contacts {
+    font-size: 32px;
+    margin: 20px 0;
+}
+.phone {
+    text-decoration: none;
+    color: #000;
+}
+.social-media-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 130px;
+    align-items: center;
+
+}
+i.fab {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
+.fa-facebook {
+    color: rgb(66, 103, 178);
+}
+
+.fa-instagram {
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-linkedin {
+    color: rgb(40,103,178);
+}
+.fa-google-plus-g {
+    color: #db4a39;
+}
+.fa-reddit {
+    color: #FF4500;
+}
+.fa-telegram {
+    color: #0088CC;
+}
+.fa-discord {
+    color: #7289DA;
+}
+.fa-twitter {
+    color: 	#1DA1F2;
+}
+.fa-youtube {
+    color: 	#FF0000;
+}
