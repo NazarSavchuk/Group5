@@ -155,7 +155,35 @@ header::after {
     color: var(--second-blue);
 }
 
+@media (max-width: 992px) {
+    .burger-menu {
+        display: block;
+        transform: translate(50%, 5%)
+    }
 
+
+
+    /* .menu {
+        display: none;
+    } */
+    .menu-list {
+        display: block;
+        position: absolute;
+        right: 0;
+        transform: translateY(57px);
+    }
+
+    .menu-list li:not(:last-child) {
+        margin: 0;
+    }
+
+    .menu-list li {
+        display: flex;
+
+
+        justify-content: flex-end;
+    }
+}
 
 
 
@@ -364,6 +392,9 @@ i.fab {
 .acc-content.active {
     display: block;
 }
+
+
+
 
 .footer {
     background-color: rgb(74, 139, 226);
