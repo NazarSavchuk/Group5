@@ -25,6 +25,7 @@ header::after {
     width: 100%;
 }
 
+
 .nav {
     padding: 0 40px;
     height: 57px;
@@ -61,7 +62,7 @@ header::after {
     color: #000;
     line-height: 57px;
     font-size: 24px;
-    text-transform: uppercase;
+    text-transform: accordion;
     letter-spacing: 1px;
     padding: 8px 16px;
     color: var(--main-blue);
@@ -394,15 +395,6 @@ i.fab {
     display: block;
 }
 
-.accordion:after {
-    content: '\02795';
-    display: inline-flex;
-    justify-content: right;
-}
-
-.active:after {
-    content: "\2796";
-}
 
 
 
@@ -429,11 +421,11 @@ i.fab {
 .sign-up__header {
     margin: 0;
     font-size: 2rem;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
 }
 
 .sign-up__text {
-    margin: 0 0 16px 0;
+    margin: 0 0 30px 0;
 
 }
 
@@ -444,7 +436,7 @@ i.fab {
     border: none;
     border-bottom: 2px solid #fff;
     height: 32px;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
 }
 
 .email-input::placeholder {
@@ -465,6 +457,7 @@ i.fab {
     border: 2px solid #fff;
     cursor: pointer;
     transition: 0.2s background-color;
+    margin-bottom: 30px;
 }
 
 .submit-btn:hover {
@@ -537,7 +530,7 @@ i.fab {
     border: 0;
     cursor: pointer;
     transition: .2s background-color;
-    color: #000;
+    color: #fff;
 }
 .slide-btn:hover {
     background-color: rgb(29, 92, 175);
@@ -548,4 +541,52 @@ i.fab {
 }
 .swiper-button-next {
     transform: translateY(-50%);
+}
+
+.accordion {
+    background-color: var(--second-blue);
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.modal {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.modal-active {
+    position: absolute;
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+}
+.modal i {
+    color: rgb(5, 173, 5);
+    font-size: 72px;
+    margin-bottom: 25px;
+}
+.modal-text {
+    margin-bottom: 16px;
+}
+.modal-btn {
+    color: var(--second-blue);
+    border: 2px solid var(--second-blue);
+    background-color: #fff;
+    padding: 10px 28px;
+}
+.modal-btn:hover {
+    color: #fff;
+    border: 2px solid var(--second-blue);
+    background-color: var(--second-blue);
 }
