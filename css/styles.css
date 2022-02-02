@@ -220,7 +220,6 @@ header::after {
     font-size: 1.5rem;
     background-color: var(--second-blue);
     border: 0;
-    border-radius: 4px;
     font-weight: 500;
     color: #fff;
     transition: 0.2s background-color;
@@ -242,7 +241,6 @@ header::after {
     font-size: 1.5rem;
     background-color: #fff;
     border: 0;
-    border-radius: 4px;
     font-weight: 500;
     color: var(--second-blue);
     transition: 0.2s background-color;
