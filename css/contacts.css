@@ -84,7 +84,7 @@ header::after {
     padding: 40px 40px;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, #ffffff, #eae7ff, #d3d0ff, #bbb9ff, #9fa3ff);
+    background-image: linear-gradient(to bottom, #ffffff, #dddff3ab, #b3c2e888, #7ea8dcab, #4a8be2);
     margin-top: 2px;
 }
 
@@ -158,4 +158,88 @@ i.fab {
 }
 .fa-youtube {
     color: 	#FF0000;
+}
+.footer {
+    background-color: rgb(74, 139, 226);
+    color: #fff;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.sign-up {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.sign-up__header {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.sign-up__text {
+    margin: 0 0 30px 0;
+
+}
+
+.email-input {
+    color: #fff;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 32px;
+    margin-bottom: 30px;
+}
+
+.email-input::placeholder {
+    color: #fff;
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 4px 16px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.2s background-color;
+    margin-bottom: 30px;
+}
+
+.submit-btn:hover {
+    background-color: #fff;
+    color: var(--second-blue);
+}
+
+.footer-menu__list {
+    min-width: 85%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.footer-menu__list li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding: 8px 16px;
+    transition: 0.2s;
+}
+
+.footer-menu__list li a:hover {
+    color: var(--second-blue);
+    background-color: #fff;
 }

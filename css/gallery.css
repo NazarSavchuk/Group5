@@ -19,7 +19,7 @@ header {
 
 header::after {
     position: absolute;
-    top: 112%;
+    top: 98%;
     content: "";
     border-bottom: 1px solid rgba(40, 120, 226, 89);
     width: 100%;
@@ -347,24 +347,6 @@ i.fab {
 .swiper {
     width: 100%;
   }
-.first-slide {
-    background: linear-gradient(rgba(0, 0, 0, 0.87),
-            rgba(0, 0, 0, 0.87)), url(../img/water-pollution.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-}
-.second-slide {
-    background: linear-gradient(rgba(0, 0, 0, 0.87),
-            rgba(0, 0, 0, 0.87)), url(../img/Pollution\ Background.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-}
-.third-slide {
-    background: linear-gradient(rgba(0, 0, 0, 0.87),
-            rgba(0, 0, 0, 0.87)), url(../img/6412407.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-}
 
 .acc-section {
     max-width: 70%;
@@ -494,9 +476,12 @@ i.fab {
     height: 1vh;
 }
 .slide__img {
-    width: 40%;
-    height: 520px;
-    margin: 40px 20px 40px 40px;
+    width: 50%;
+    height: 480px;
+}
+.gallery__wrapper {
+    max-width: 1340px;
+    margin: 30px auto;
 }
 .slide__text {
     margin: 40px 40px 40px 20px;
@@ -507,7 +492,7 @@ i.fab {
     text-align: center;
 }
 .swiper-slide {
-    height: 600px;
+    height: 480px;
 }
 .slide__descr {
     font-size: 1.6rem;
