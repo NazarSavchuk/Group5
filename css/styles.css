@@ -155,7 +155,35 @@ header::after {
     color: var(--second-blue);
 }
 
+@media (max-width: 992px) {
+    .burger-menu {
+        display: block;
+        transform: translate(50%, 5%)
+    }
 
+
+
+    /* .menu {
+        display: none;
+    } */
+    .menu-list {
+        display: block;
+        position: absolute;
+        right: 0;
+        transform: translateY(57px);
+    }
+
+    .menu-list li:not(:last-child) {
+        margin: 0;
+    }
+
+    .menu-list li {
+        display: flex;
+
+
+        justify-content: flex-end;
+    }
+}
 
 
 
@@ -198,11 +226,11 @@ header::after {
     transition: 0.2s background-color;
     cursor: pointer;
     margin-right: 32px;
+    text-decoration: none;
 }
 
 .donate-btn:hover {
-    background-color: #fff;
-    color: var(--second-blue);
+    background-color: rgb(21, 84, 121)
 }
 
 .donate-btn:active {
@@ -211,7 +239,6 @@ header::after {
 }
 
 .contact-btn {
-    text-decoration: none;
     padding: 16px 32px;
     font-size: 1.5rem;
     background-color: #fff;
@@ -221,11 +248,11 @@ header::after {
     transition: 0.2s background-color;
     cursor: pointer;
     margin-right: 32px;
+    text-decoration: none;
 }
 
 .contact-btn:hover {
-    color: #fff;
-    background-color: var(--second-blue);
+    background-color: rgb(192, 192, 192);
 }
 
 
@@ -368,6 +395,9 @@ i.fab {
     display: block;
 }
 
+
+
+
 .footer {
     background-color: rgb(74, 139, 226);
     color: #fff;
@@ -463,7 +493,7 @@ i.fab {
 
 .slide-content {
     display: flex;
-    height: 1vh;
+    height: vh;
 }
 .slide__img {
     width: 40%;
@@ -477,7 +507,6 @@ i.fab {
 .slide__heading {
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 24px;
 }
 .swiper-slide {
     height: 600px;
@@ -489,7 +518,7 @@ i.fab {
 .slide-btn {
     display: block;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 80px;
     padding: 10px 20px;
     font-size: 2rem;
     background-color: var(--main-blue);
