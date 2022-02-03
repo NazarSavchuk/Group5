@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailConfirmBtn = document.querySelector('.submit-btn')
     const accTitle = document.querySelectorAll('.acc-title')
     const accContent = document.querySelector('.acc-content')
+    const joinUS = document.querySelector('.submit-btn')
+    const email = document.querySelector('.email-input')
 
     galleryBtn.addEventListener('click', function(){
         dropDownGallery.classList.toggle('hidden')
@@ -58,3 +60,6 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   
 });
+
+
+
