@@ -19,7 +19,6 @@ header {
 
 header::after {
     position: absolute;
-    top: 104%;
     content: "";
     border-bottom: 1px solid rgba(40, 120, 226, 89);
     width: 100%;
@@ -80,85 +79,33 @@ header::after {
 
     transition: 0.05s ease-in-out;
 }
-.contacts__section {
-    min-height: 560px;
-    padding: 40px 40px;
+.aboutus__content {
+    margin: 40px 40px;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, #ffffff, #dddff3ab, #b3c2e888, #7ea8dcab, #4a8be2);
-    margin-top: 2px;
 }
-
-.contacts__content {
-    text-align: center;
-    width: 100%;
+.aboutus__content p{
+    display: inline;
+    font-size: 24px;
+    padding-left: 40px;
 }
-.contacts__heading {
-    font-size: 32px;
-    margin-bottom: 14px;
-}
-.adress__heading {
-    font-size: 32px;
-    margin: 14px 0;
-}
-.adress__content {
-    font-size: 22px;
-}
-.socialMedia__contacts {
-    font-size: 32px;
-    margin: 20px 0;
-}
-.phone {
+.aboutus__button {
+    display: block;
+    margin: 40px auto;
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    padding: 16px 24px;
+    background-color: var(--second-blue);
+    max-width: 180px;
+    text-align: center;
+    font-weight: bold;
+    transition: .2s background-color;
 }
-.social-media-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    height: 130px;
-    align-items: center;
-
+.aboutus__button:hover {
+    background-color: rgb(28, 112, 160);
 }
-i.fab {
-    font-size: 3rem;
-    cursor: pointer;
-}
-
-
-.fa-facebook {
-    color: rgb(66, 103, 178);
-}
-
-.fa-instagram {
-    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.fa-linkedin {
-    color: rgb(40,103,178);
-}
-.fa-google-plus-g {
-    color: #db4a39;
-}
-.fa-reddit {
-    color: #FF4500;
-}
-.fa-telegram {
-    color: #0088CC;
-}
-.fa-discord {
-    color: #7289DA;
-}
-.fa-twitter {
-    color: 	#1DA1F2;
-}
-.fa-youtube {
-    color: 	#FF0000;
+.aboutus__content img {
+    width: 680px;
 }
 .footer {
     background-color: rgb(74, 139, 226);
