@@ -516,6 +516,9 @@ i.fab {
     text-align: left;
 }
 .slide-btn {
+    width: 360px;
+    text-decoration: none;
+    text-align: center;
     display: block;
     margin: 0 auto;
     margin-top: 80px;
